@@ -47,3 +47,26 @@
     .blog-grid { flex-direction: column; }
     .sidebar { position: static; width: 100%; margin-bottom: 40px; }
 }
+/* --- YENİ EKLENEN PROFESYONEL TASARIM KODLARI --- */
+
+/* Ana Sayfa - Büyük Sosyal Medya İkonları */
+.social-links-large { display: flex; justify-content: center; gap: 30px; flex-wrap: wrap; margin-top: 20px; }
+.social-icon-large { 
+    width: 80px; height: 80px; display: flex; align-items: center; justify-content: center; 
+    font-size: 2.5rem; border-radius: 50%; color: white; transition: all 0.3s ease; 
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+.social-icon-large.instagram { background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%); }
+.social-icon-large.facebook { background: #1877F2; }
+.social-icon-large.youtube { background: #FF0000; }
+.social-icon-large:hover { transform: translateY(-8px); box-shadow: 0 15px 25px rgba(0,0,0,0.2); color: white; }
+
+/* HPV Hakkında - Profesyonel Blog Tipografisi */
+.blog-post { background: #fff; padding: 40px; border-radius: 12px; box-shadow: 0 2px 15px rgba(0,0,0,0.04); border-bottom: none; margin-bottom: 40px; }
+.blog-post h2 { font-size: 2.2rem; border-bottom: 2px solid var(--light-bg); padding-bottom: 15px; margin-bottom: 25px; }
+.blog-post p { font-size: 1.15rem; color: #334155; line-height: 1.8; margin-bottom: 20px; text-align: justify; }
+.blog-post h3 { font-size: 1.5rem; color: var(--primary-color); margin-top: 35px; border-left: 4px solid var(--accent-color); padding-left: 15px; }
+
+/* Vurgulu Metinler (Tırnak / Alıntı Görünümü) */
+.blog-post strong { color: var(--primary-color); font-weight: 600; }
+.blog-post > p:first-of-type::first-letter { font-size: 3.5rem; font-weight: bold; color: var(--accent-color); float: left; margin-right: 10px; line-height: 1; margin-top: -5px; }
